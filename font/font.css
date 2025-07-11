@@ -1,0 +1,88 @@
+/*Setup font*/
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400; /* Regular Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500; /* Medium Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600; /* SemiBold Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700; /* Bold Italic */
+    font-style: italic;
+}
+
+/*Custom font SF Pro Rounded*/
+
+@font-face {
+    font-family: 'SF Pro Rounded ';
+    src: url('../fonts/SF-Pro-Rounded-Regular.otf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: Regular;
+}
+
+@font-face {
+    font-family: 'SF Pro Rounded ';
+    src: url('../fonts/SF-Pro-Rounded-Semibold.otf') format('truetype');
+    font-weight: 600; /* Semibold */
+    font-style: Semibold;
+}
+z
+@font-face {
+    font-family: 'SF Pro Rounded ';
+    src: url('../fonts/SF-Pro-Rounded-Medium.otf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: Medium;
+}
+
+@font-face {
+    font-family: 'SF Pro Rounded ';
+    src: url('../fonts/SF-Pro-Rounded-Bold.otf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: bold;
+}

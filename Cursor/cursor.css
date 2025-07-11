@@ -1,0 +1,26 @@
+/* Custom Cursor Style */
+.cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: fixed; /* Đổi từ absolute sang fixed để giữ đúng vị trí */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out, background 0.2s ease-out;
+}
+
+.cursor-f {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  border: 1px solid rgb(255, 255, 255);
+  position: fixed; /* Đổi từ absolute sang fixed */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  opacity: 0.5;
+}

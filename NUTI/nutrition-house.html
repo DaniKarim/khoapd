@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition House Store</title>
+    <link rel="stylesheet" href="nutrition-house.css"> <!-- Đường dẫn tới file CSS nếu cần -->
+    <link rel="stylesheet" href="../cursor.css">
+    <!-- Tối ưu kết nối sớm đến Google Fonts (tăng hiệu năng) -->
+    <!-- Nhúng font Montserrat với đầy đủ biến thể (100–900, nghiêng & thường) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<body>
+    <!-- Gradient Circle -->
+    <div class="gradient-circle"></div>
+
+    <!-- Top Bar  -->
+    <section class="wrapper">
+        <div class="container">
+            <div class="menu-items">
+                <a href="javascript:history.back()" class="menu-item link">
+                    <span class="mask">
+                        <div class="link-container">
+                            <span class="link-title1 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                            <span class="link-title2 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                        </div>
+                        <div class="link-container">
+                            <span class="link-title1 title">RETURN</span>
+                            <span class="link-title2 title">RETURN</span>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <a href="javascript:history.back()" class="fullscreen-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="home.js"></script>
+
+ <!--Banner-title-->
+    <section class="full-page-wrapper">
+        <div class="banner-title">
+            <div class="banner">
+                <img src="../images/banner/nuti.png" alt="banner-top" class="banner-image">
+            </div>
+        </div>
+        <div class="project-title">
+            <h1 class="big-title blur-text" id="blurText" >NUTRITION HOUSE STORE</h1>
+        </div>
+        <div class ="role-wrapper">
+            <div class ="year">
+                <div class="tiltle">Year</div>
+                <div class="value">2021</div>
+            </div>
+            <div class ="role">
+                <div class="tiltle">Role</div>
+                <div class="value">UX/UI Designer</div>
+            </div>
+        </div>
+    </section>
+    
+<!--Content-->
+<div class="full-content-wrapper">
+    <!--Project Overview-->
+    <div class="fade-effect category">
+        <div class="title-detail">Project Overview</div>
+        <div class="content">
+            Nutrition house is an online store on device platforms such as desktop and mobile that specializes in selling Nutifood products developed based on virtual reality technology (VR 360), giving users a shopping experience. Choose authentic products like at the store.
+        </div>
+    </div>
+     <!--Project Goal-->
+     <div class="fade-effect category">
+        <div class="title-detail">Project Goal</div>
+        <div class="heading">Immersive Shopping Experience</div>
+        <div class="content">The goal of "Nutrition House Store (VR360)" is to create a highly immersive online shopping experience through the use of VR (360) technology. This allows users to browse and select Nutifood products in a virtual environment that simulates the look and feel of a real store.</div>
+        
+        <div class="heading">Cross-Platform Availability</div>
+        <div class="content">Nutrition House will be accessible on both desktop and mobile devices, ensuring that users can enjoy the experience regardless of the platform they prefer.</div>
+
+        <div class="heading">Authentic Product Presentation</div>
+        <div class="content">Through VR (360), products will be showcased in a realistic manner, providing users with detailed views and allowing them to feel more confident in their purchasing decisions, as if they were shopping in a physical store.</div>
+        
+        <div class="heading">Improve Customer Engagement</div>
+        <div class="content">The virtual shopping experience aims to engage customers on a deeper level, making the shopping process more enjoyable and interactive, thereby increasing customer satisfaction and retention.</div>
+    </div>
+
+<!--Project Timeline-->
+<div class="fade-effect category" >
+    <div class="title-detail">Project Timeline</div>
+    <div class="content">Estimated time within 1 month for me to go through the steps from start to deployment to users</div> 
+    <img src="../images/nutifood/project-timeline.png" alt="Timeline" class="image">         
+</div>
+
+<!--User Flow-->
+<div class="fade-effect category">
+    <div class="title-detail">User Flow</div>
+    <div class="content">User flow reflects the user's process from launching the application to discovering all the functions in the application and performing some action on the application.</div>
+    <img src="../images/nutifood/user-flow.png" alt="user flow" class="image">
+</div>
+
+<!--Style Guide & Components-->
+<div class="fade-effect category">
+    <div class="title-detail">Style Guide & Components</div>
+    <div class="heading">Typography</div>
+    <div class="wrapper-typo">
+        <div class="title-typo">Nunito</div>
+        <div class="title-2-typo">Category</div>
+        <div class="content-typo">Sans-serif</div>
+        <div class="title-2-typo">Infor</div>
+        <div class="content-typo">Nunito is a balanced sans-serif typeface with rounded terminals, giving it a friendly and modern look. Originally created by Vernon Adams and later expanded by Jacques Le Bailly, Nunito includes 7 weights (from ExtraLight to Black) with matching italics.</div>
+        <div class="divider-typo"></div>
+        <div class="wrapper-col">
+        <div class="col-typo">
+            <div class="title-1-demo">Regular</div>
+            <div class="Aa-1">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-2-demo">Medium</div>
+            <div class="Aa-2">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-3-demo">SemiBold</div>
+            <div class="Aa-3">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-4-demo">Bold</div>
+            <div class="Aa-4">Aa</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="heading">Icongraphy</div>
+    <div class="grid-icon">
+        <div class="wrapper-icon">
+            <img src="../images/nutifood/icon/1.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/2.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/3.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/4.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/5.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/6.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/7.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/8.png" alt="icon" class="icon-image">
+            <img src="../images/nutifood/icon/9.png" alt="icon" class="icon-image">
+        </div>
+    </div>
+
+    <div class="heading">Color Palette
+        <div class="content" style="margin-top: 1rem; color: #fff;">Primary colors</div>       
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #006E43;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Dartmount Green</div>
+                    <div class="hex-color">#006E43</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #00AEEF;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Picton Blue</div>
+                    <div class="hex-color">#00AEEF</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #FFCD00;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Jonquil</div>
+                    <div class="hex-color">#FFCD00</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #231F20; border: 1px solid #727272;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Raisin Black</div>
+                    <div class="hex-color">#231F20</div>
+                </div>   
+            </div>       
+        </div>
+    </div>
+</div>
+
+
+<!--Visual Design-->
+<div class="fade-effect category">
+    <div class="title-detail">Visual Design</div>
+        <div class="content">Here are some of the final design screens that we share</div>
+        <div class="wrapper-content1">
+            <div class="wrapper-label">
+                <div class="heading">Version: Website</div>
+                <div class="image-container">
+                <img src="../images/nutifood/ver-website.png" alt="mockup" class="mockup-visual" > 
+                </div>
+            </div>
+            
+        </div>
+        <div class="wrapper-content1">
+            <div class="wrapper-label">
+                <div class="heading">Version: Mobile Web</div>
+                <div class="grid-mockup">
+                    <img src="../images/nutifood/mockup/1.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/2.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/3.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/4.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/5.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/6.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/7.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/8.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/9.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/10.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/11.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/12.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/13.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/14.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/15.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/16.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/17.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/18.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/19.png" alt="mockup" class="mockup-visual"> 
+                    <img src="../images/nutifood/mockup/20.png" alt="mockup" class="mockup-visual"> 
+            </div>         
+        </div>        
+        </div>
+</div>
+
+<!--Prototype-->
+<div class="fade-effect category">
+    <div class="title-detail">Prototyping</div>
+    <div class="content">An interactive model showcasing key features and user flow, used to test design and functionality before final development.</div>
+    <div class="grid-link">
+        <a href="https://www.figma.com/proto/QDl25qaJpn7o2fOsEXrHfb/Layout?page-id=4089%3A203990&node-id=4422-228538&viewport=-131%2C879%2C0.43&scaling=scale-down&starting-point-node-id=4422%3A228538&show-proto-sidebar=1&t=JYEWXubQDKzqOLHs-1" class="content-link">
+            Version: website
+        </a>
+        <a href="https://www.figma.com/proto/QDl25qaJpn7o2fOsEXrHfb/Layout?page-id=4559%3A230161&node-id=4992-306042&viewport=664%2C338%2C0.02&scaling=min-zoom&starting-point-node-id=4992%3A306042&t=SfqG4CDCQfDLORHo-1" class="content-link">
+            Version: mobile web
+        </a>
+    </div>
+</div>
+
+<!--Deployed in real-world environments.-->
+<div class="fade-effect category">
+    <div class="title-detail">Deployed in real-world environments.</div>
+    <div class="content">The project was successfully implemented and used in practice as a virtual store specializing in selling Nutifood products.</div>
+    <div class="grid-link">
+        <a href="https://virtual.ngoinhadinhduong.com/#/?s=outside" class="content-link">
+            Link to the Virtual Shop
+        </a>
+    </div>
+</div>
+
+</div>
+</section>
+
+<!--Contact
+<section id="main-infor" class="wrapper-contact">
+    <div class="contact-me" id="contact">
+        <div class="title">
+            <h4 class="heading1">👋 Get in touch</h4>
+            <div class="grid-container-contact">
+                <div class="contact">
+                    <div class="my-gmail">
+                        <a href="mailto:khoapham214@gmail.com">
+                            <h1 class="heading2">khoapham214@gmail.com</h1>
+                        </a>
+                    </div>
+                    <div class="my-phone">
+                            <a href="skype:0764157008?call">
+                                <h1 class="heading2">076 415 7008</h1>
+                            </a>
+                        </h1>
+                    </div>      
+    </div>
+    <div class="divider"></div>
+    <div class="social-media">
+        <div class="facebook">
+                    <div class="social-media">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/khoa.pham.7906" class="social-link">
+                                <img src="../images/Social Media/facebook.png" alt="Facebook Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/khoa-pham-933732252/" class="social-link">
+                                <img src="../images/Social Media/linkedin.png" alt="LinkedIn Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="behance">
+                            <a href="https://www.behance.net/lawlaw3" class="social-link">
+                                <img src="../images/Social Media/behance.png" alt="Behance Logo" class="social">
+                            </a>
+                     </div>
+                     <div class="zalo">
+                            <a href="https://zalo.me/0764157008" class="social-link">
+                                <img src="../images/Social Media/Zalo.png" alt="Zalo Logo" class="social">
+                            </a>
+                        </div> 
+                    </div>             
+    </div>
+</section>
+-->
+
+  <div id="footer-container"></div>
+  <script src="../FOOTER/footer.js"></script>
+  <script src="nutrition-house.js"></script>
+  <script src="../cursor.js"></script>
+</body>
+</html>
+
+
+
+

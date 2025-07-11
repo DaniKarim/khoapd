@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Do We Manage The Monthly Costs For OTP Services?</title>
+    <link rel="stylesheet" href="otp.css"> <!-- Đường dẫn tới file CSS nếu cần -->
+    <link rel="stylesheet" href="../cursor.css">
+    <!-- Tối ưu kết nối sớm đến Google Fonts (tăng hiệu năng) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Nhúng font Montserrat với đầy đủ biến thể (100–900, nghiêng & thường) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+    <!-- Gradient Circle -->
+    <div class="gradient-circle"></div>
+
+    <!-- Top Bar  -->
+    <section class="wrapper">
+        <div class="container">
+            <div class="menu-items">
+                <a href="javascript:history.back()" class="menu-item link">
+                    <span class="mask">
+                        <div class="link-container">
+                            <span class="link-title1 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                            <span class="link-title2 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                        </div>
+                        <div class="link-container">
+                            <span class="link-title1 title">RETURN</span>
+                            <span class="link-title2 title">RETURN</span>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <a href="javascript:history.back()" class="fullscreen-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="home.js"></script>
+
+ <!--Banner-title-->
+    <section class="full-page-wrapper">
+        <div class="project-title">
+            <h1 class="big-title blur-text" id="blurText" >HOW TO CONTROL AND OPTIMIZE YOUR OTP SERVICE EXPENSES </h1>
+        </div>
+        <div class ="role-wrapper">
+            <div class ="year">
+                <div class="tiltle">Year</div>
+                <div class="value">2023 - 2024</div>
+            </div>
+            <div class ="role">
+                <div class="tiltle">Role</div>
+                <div class="value">UX/UI Designer</div>
+            </div>
+        </div>
+    </section>
+    
+<!--Content-->
+<div class="full-content-wrapper">
+     <!--Project Overview-->
+     <div class="fade-effect category">
+        <div class="title-detail">Project Overview</div>
+        <div class="heading">The login/signup feature. Why the alteration?</div>
+        <div class="content" style="padding-bottom: 0.5rem;">
+            When we first launched the Medigo application, our login and registration process was designed to be straightforward. Users only needed to enter their phone number to receive an OTP code via SMS, which would allow them to access the app upon entry of the code.
+        </div>
+        <div class="content" style="padding-bottom: 0.5rem;">
+            However, sending OTP codes incurs a fee for our company, and these costs have been steadily increasing each month. Additionally, it's important to note that not all logged-in users ultimately make purchases.
+        </div>
+        <div class="content">
+            Additionally, it's important to note that not all logged-in users ultimately make purchases.
+        </div>
+        <div class="image-container">
+            <img src="../OTP/images-otp/data.avif" alt="illustration" class="image-illustration">
+        </div>
+        <div class="heading">A little related data I can show everyone </div>
+        <div class="content">
+            I use the Google Analytics tool to monitor event counts, including the frequency of user logins and OTP requests. Due to data confidentiality requirements, this information will be blurred to ensure privacy.
+        </div>
+    </div>
+
+    <!--What are the causes?-->
+    <div class="fade-effect category" >
+        <div class="title-detail">What are the causes?</div>
+        <div class="heading">The way I investigated the root cause of the issue</div>
+        <div class="content">
+            I use Google Analytics tool to track the number of users and clicks on the OTP code sending button. In addition, I also check the number of logged in/registered users and the number of orders during the period from Oct 2023 - Dec 2023. I found something very interesting based on these figures.
+        </div>
+    </div>
+
+    <!--My findings-->
+    <div class="fade-effect category" >
+        <div class="title-detail">My findings</div>
+        <div class="content">
+           Medigo has 2 platforms: app and web/mobile web (the platform that brings our main number of orders is the app). Reducing SMS OTP costs will need to be improved on both platforms but must ensure it does not affect the current number of orders. Therefore, I decided to first improve on the web/mobile web platform because the number of orders here is relatively small but the number of users receiving SMS OTP is relatively large.
+        </div> 
+        <div class="heading">Find out what's going on</div>
+        <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">Our current web interface has too many places that require users to log in in an unnecessary and quite unreasonable way, with the amount of traffic to our site ranging from 450k - 500k per month, we have to pay 1 Approximate amount for this.  "Once again, our goal is to optimize the cost of sending SMS OTP"</li>
+                    <li class="li">On the interface product items, there are 2 buttons ''Add to cart" and "Buy now" and when the user clicks on these 2 buttons, they are asked to log in, which is quite reasonable. But when I look at the number of successful orders And the number of users receiving OTP is a terrible difference.  The time from user flow redesign to release was 5 days.</li>
+                </ul>
+        </div>
+        <div class="image-container">
+            <img src="../OTP/images-otp/671cff616dc441bf17c0b5cf_12086-p-1600.png" alt="illustration" class="image-illustration">
+        </div>
+        <div class="heading">Identify the issue and plan the solution</div>
+        <div class="content">
+            First, I will solve this problem on the web/mobile web first (You can quickly look at the huge difference between the number of orders and the number of logged in/registered users).
+        </div>
+        <div class="content">
+            Review the full user flow to identify points where login or registration might be unnecessary.
+        </div>
+        <div class="content">
+            The reason is that not every visitor to our website will necessarily make a purchase. They may browse, compare prices with competitors' sites... so I decided to change the traffic flow to allow users to browse the website comfortably, only requiring them to register/login when they decide to make a purchase.
+        </div>
+        <div class="heading">Monitor and check results</div>
+        <div class="content">
+            After 1 month of changing the user flow and the location of the buttons is not reasonable. I check results from Google Analytics and Microsoft Clarity to track metrics and user engagement after changing user flows.
+        </div>
+        <div class="content">
+            Tracking user behavior ensures that changes to new user flows do not impact the existing user experience and order flow.
+        </div>
+        <div class="content">
+            Result: In November, our order volume remained stable. While the number of OTP messages sent to users has decreased, the reduction is minimal. There remains a substantial gap between the number of OTPs sent for login/registration and the actual number of orders placed. Additionally, OTP messaging costs have not shown significant change.
+        </div>
+    </div>
+
+    <!--New solution for improvement-->
+    <div class="fade-effect category" >
+        <div class="title-detail">New solution for improvement</div>
+        <div class="content">
+            Medigo has 2 platforms: app and web/mobile web (the platform that brings our main number of orders is the app). Reducing SMS OTP costs will need to be improved on both platforms but must ensure it does not affect the current number of orders. Therefore, I decided to first improve on the web/mobile web platform because the number of orders here is relatively small but the number of users receiving SMS OTP is relatively large.
+        </div> 
+        <div class="image-container">
+            <img src="../OTP/images-otp/questions.avif" alt="illustration" class="image-illustration">
+        </div>
+
+        <div class="heading">Questions raised:</div>
+        <div class="list-paragraph">
+            <div class="content" style="padding-bottom: 0rem;">
+                The results after changing the user flow were not positive, we were forced to find a new direction to reduce costs and based on the data obtained in the previous changes I can make hypotheses as well as some questions.
+            </div> 
+                <ul class="ul">
+                    <li class="li">Is the number of users re-logging in the cause of this unusually high login status?</li>
+                    <li class="li">Does the unusual increase in users logging in/registering have anything to do with being infiltrated by bad guys from outside?</li>
+                    <li class="li">Is the cost of the 3rd party SMS OTP sending service too high? Is an alternative method needed?</li>
+                </ul>
+        </div>
+
+    <div class="heading">Find the answer to the above question</div>
+        <div class="content">
+            Is the number of users re-logging in the cause of this unusually high login status?
+        </div>
+        <div class="content" style="padding-bottom: 1rem;">
+            &#8594; After calculating the total number of users who sent SMS OTP, we found that about 89.8% were new subscribers and 13.2% were subscribers who had accounts and logged in again. Based on the above data, it can be concluded that the number of newly registered subscribers accounts for the majority and this group of subscribers needs to be addressed first.
+        </div>
+
+        <div class="content">
+            Does the unusual amount of users logging in/registering have anything to do with being infiltrated by bad actors from outside?
+        </div>
+        <div class="content" style="padding-bottom: 1rem;">
+            &#8594;  To verify whether we are being intentionally infiltrated by bad external actors, I need to dig deeper into the subscribers who have received OTP, as well as the number of times each subscriber has received OTP.Result: we are being infiltrated by bad external actors who require us to send OTP codes continuously during the month, with some subscribers we have to send more than 100 OTP codes/month. This is really a big problem
+        </div>
+
+        <div class="content">
+            Is the cost of the 3rd party OTP SMS sending service too high? Is an alternative method needed?
+        </div>
+        <div class="content" style="padding-bottom: 0rem;">
+            &#8594; We have also considered finding another OTP sending service at a lower cost, this is also a possible direction. But it is also necessary to test and verify so as not to affect the user experience.
+        </div>
+        
+
+        <div class="heading">Based on the data, make a decision</div>
+        <div class="card-grid-research">
+        <div class="card">
+          <div class="heading-table">
+            <div class="title-heading-table">Decision 1</div>
+          </div>
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+                The results after changing the user flow were not positive, we were forced to find a new direction to reduce costs and based on the data obtained in the previous changes I can make hypotheses as well as some questions.
+            </div> 
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+                Some potential risks that may occur:
+            </div>
+          <div class="list-paragraph-infor">
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+               &#8594; However, I must still be cautious about whether switching between applications to receive OTP codes will affect the user experience.
+            </div>
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+               &#8594; If the Zalo application cannot be used, alternative options need to be considered.
+            </div>
+        </div>
+        </div>  
+        <div class="card">
+          <div class="heading-table">
+            <div class="title-heading-table">Decision 2</div>
+          </div>
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+                Regarding the issue of intrusions by malicious actors, I cannot determine which subscriptions are real and which are fake. Therefore, I have reviewed our system to check for any vulnerabilities and discovered that we are quite lax in our login process, with no regulations in place. I believe I need to establish some rules for this. The regulations are as follows:
+            </div> 
+          <div class="list-paragraph-infor">
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+               &#8594; Limit the number of OTP requests per phone number (Maximum of 5 OTPs per day, and there will be a waiting period before the phone number can request another OTP).
+            </div>
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+               &#8594; Limit the number of OTP requests per DeviceID (Maximum number of OTPs per device, and there will be a waiting period before the device can request another OTP).
+            </div>
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+               &#8594; Limit the number of OTP requests per IP address (Maximum of 7 OTPs per IP address, and we will ban any phone number that requests more than 7 OTPs within a month).
+            </div>
+            <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+                Some possible risks:
+            </div> 
+             <div class="content" style="padding-left: 0.5rem; color: #CBD5DF;">
+               &#8594; A potential risk is that some legitimate users may still use incognito mode to shop on our website and use it to make repeated purchases.
+            </div>
+        </div>
+        </div>
+   
+        </div>
+    </div>
+
+     <!--User Flow-->
+    <div class="fade-effect category" >
+        <div class="title-detail">User Flow</div>
+        <div class="content">
+                Simple user flow describes the task of the user logging in/registering with a phone number to the task of selecting an expression to receive a code via SMS or Zalo      
+         </div> 
+        <div class="image-container">
+            <img src="../OTP/images-otp/user_flow.avif" alt="illustration" class="image-illustration">
+        </div>
+    </div>
+
+    <!--Monitor metrics after feature release-->
+    <div class="fade-effect category">
+    <div class="title-detail">Monitor metrics after feature release</div>
+    <div class="heading">Tracking data from March 2024 - May 2024</div>
+    <ul class="ul">
+        <li class="li">After releasing the feature, we obtained quite surprising results: over 70% of users switched to using Zalo to receive OTP codes, and this did not affect the user experience as negatively as I had anticipated.</li>
+        <li class="li">The cost for sending OTPs for login/registration decreased by more than 60% in March and April.</li>
+        <li class="li">The number of subscribers receiving OTPs more than 40 times a month also significantly decreased: currently, each subscriber only requests OTPs about 4-5 times a month.</li>
+    </ul>
+    </div>
+
+<!--Contact
+<section id="main-infor" class="wrapper-contact">
+    <div class="contact-me" id="contact">
+        <div class="title">
+            <h4 class="heading1">👋 Get in touch</h4>
+            <div class="grid-container-contact">
+                <div class="contact">
+                    <div class="my-gmail">
+                        <a href="mailto:khoapham214@gmail.com">
+                            <h1 class="heading2">khoapham214@gmail.com</h1>
+                        </a>
+                    </div>
+                    <div class="my-phone">
+                            <a href="skype:0764157008?call">
+                                <h1 class="heading2">076 415 7008</h1>
+                            </a>
+                        </h1>
+                    </div>      
+    </div>
+    <div class="divider"></div>
+    <div class="social-media">
+        <div class="facebook">
+                    <div class="social-media">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/khoa.pham.7906" class="social-link">
+                                <img src="../OTP/images-otp/Social Media/facebook.png" alt="Facebook Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/khoa-pham-933732252/" class="social-link">
+                                <img src="../OTP/images-otp/Social Media//linkedin.png" alt="LinkedIn Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="behance">
+                            <a href="https://www.behance.net/lawlaw3" class="social-link">
+                                <img src="../OTP/images-otp/Social Media/behance.png" alt="Behance Logo" class="social">
+                            </a>
+                     </div>
+                     <div class="zalo">
+                            <a href="https://zalo.me/0764157008" class="social-link">
+                                <img src="../OTP/images-otp/Social Media/Zalo.png" alt="Zalo Logo" class="social">
+                            </a>
+                        </div> 
+                    </div>             
+    </div>
+</section>
+-->
+  <div id="footer-container" class="wrapper-infor"></div>
+  <script src="../FOOTER/footer.js"></script>
+  <script src="otp.js"></script>
+  <script src="../cursor.js"></script>
+</body>
+</html>
+
+
+
+

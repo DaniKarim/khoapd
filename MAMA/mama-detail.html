@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management App</title>
+    <link rel="stylesheet" href="mama-detail.css"> <!-- Đường dẫn tới file CSS nếu cần -->
+    <link rel="stylesheet" href="../cursor.css">
+    <!-- Tối ưu kết nối sớm đến Google Fonts (tăng hiệu năng) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Nhúng font Montserrat với đầy đủ biến thể (100–900, nghiêng & thường) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+    <!-- Gradient Circle -->
+    <div class="gradient-circle"></div>
+
+    <!-- Top Bar  -->
+    <section class="wrapper">
+        <div class="container">
+            <div class="menu-items">
+                <a href="javascript:history.back()" class="menu-item link">
+                    <span class="mask">
+                        <div class="link-container">
+                            <span class="link-title1 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                            <span class="link-title2 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                        </div>
+                        <div class="link-container">
+                            <span class="link-title1 title">RETURN</span>
+                            <span class="link-title2 title">RETURN</span>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <a href="javascript:history.back()" class="fullscreen-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="home.js"></script>
+
+ <!--Banner-title-->
+    <section class="full-page-wrapper">
+        <div class="banner-title">
+            <div class="banner">
+                <img src="../images/banner/mama.png" alt="banner-top" class="banner-image">
+            </div>
+        </div>
+        <div class="project-title">
+            <h1 class="big-title blur-text" id="blurText" >COURSES MANAGEMENT APP</h1>
+        </div>
+        <div class ="role-wrapper">
+            <div class ="year">
+                <div class="tiltle">Year</div>
+                <div class="value">2023</div>
+            </div>
+            <div class ="role">
+                <div class="tiltle">Role</div>
+                <div class="value">UX/UI Designer</div>
+            </div>
+        </div>
+    </section>
+    
+<!--Content-->
+<div class="full-content-wrapper">
+    <!--Project Overview-->
+    <div class="fade-effect category">
+        <div class="title-detail">Project Overview</div>
+        <div class="content">
+            MAMA is an application for students to use to manage courses, study sessions and store learned content. In addition, the application has some essential features for the learning process
+        </div>
+    </div>
+     <!--Project Goal-->
+     <div class="fade-effect category">
+        <div class="title-detail">Project Goal</div>
+        <div class="content">
+            <div class="heading">Students can manage their own learning path and keep track of the upcoming class schedule</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">Manage the course: see the name of the teacher, the timetable, the duration of the course (number of hours studied, number of hours not studied), the status of the course.</li>
+                    <li class="li">Manage resources: learning materials, teaching videos, exercises.</li>
+                    <li class="li">Manage learning results: tests, test results.</li>
+                    <li class="li">Update information: change class time, change teacher.</li>
+                </ul>
+            </div>
+            <div class="heading">Students can report their absence and change their schedule</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">Allow students to report absences or change class schedules directly on the app.</li>
+                    <li class="li">Notify teachers and class administrators when there is a request to report absence or schedule changes.</li>
+                    <li class="li">Update information: class time after change.</li>
+                </ul>
+            </div>
+            <div class="heading">Confirm the lesson /class time</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">Study time management: students can confirm whether the session has been completed or not.</li>
+                    <li class="li">Update information: update the status of the session, the duration of the course.</li>
+                </ul>
+            </div>
+            <div class="heading">Review of the session</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">Review to evaluate the quality of each session.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Design Process-->
+    <div class="fade-effect category" >
+        <div class="title-detail">Design Process</div>
+        <div class="content">
+            Throughout product development. I follow a user-centric interaction design (UCD) process, addressing their needs at each design stage through relevant and accessible features close to users  </div>
+            <div class="card-grid">
+                <div class="card">
+                  <div class="heading-table">
+                    <img class="icon-heading-table" src="../images/mama/compass.png" alt="compass" />
+                    <div class="title-heading-table">Discover</div>
+                  </div>
+                  <div class="paragraph-table">User Research</div>
+                  <div class="paragraph-table">Problem Research</div>
+                  <div class="paragraph-table">Empathize</div>
+                  <div class="paragraph-table">Design Strategy</div>
+                </div>  
+                <div class="card">
+                    <div class="heading-table">
+                      <img class="icon-heading-table" src="../images/mama/search.png" alt="search" />
+                      <div class="title-heading-table">Define</div>
+                    </div>
+                    <div class="paragraph-table">Data Gathering</div>
+                    <div class="paragraph-table">Empathy Mapping</div>
+                    <div class="paragraph-table">User Interview</div>
+                    <div class="paragraph-table">User Persona</div>
+                  </div>  
+                  <div class="card">
+                    <div class="heading-table">
+                      <img class="icon-heading-table" src="../images/mama/lighting-bulb.png" alt="ideate" />
+                      <div class="title-heading-table">Ideate</div>
+                    </div>
+                    <div class="paragraph-table">Brain Storming</div>
+                    <div class="paragraph-table">User Flow</div>
+                    <div class="paragraph-table">Information Architecture</div>
+                    <div class="paragraph-table">Paper Sketch</div>
+                  </div>  
+                  <div class="card">
+                    <div class="heading-table">
+                      <img class="icon-heading-table" src="../images/mama/palette.png" alt="design" />
+                      <div class="title-heading-table">Design</div>
+                    </div>
+                    <div class="paragraph-table">Low-Fi Wireframe</div>
+                    <div class="paragraph-table">Hi-Fi Wireframe</div>
+                    <div class="paragraph-table">Visual Design</div>
+                    <div class="paragraph-table">Interaction</div>
+                  </div>  
+                </div>
+     </div>
+
+    <!--Project Timeline-->
+    <div class="fade-effect category" >
+        <div class="title-detail">Project Timeline</div>
+        <div class="content">
+            Estimated time within 1 month for me to go through the steps from start to deployment to users</div> 
+         <img src="../images/mama/timeline.png" alt="Timeline" class="image">         
+    </div>
+
+<!--User Define-->
+<div class="fade-effect category">
+    <div class="title-detail">User Define</div>
+    <div class="card-grid-user-define">
+        <div class="card">
+          <div class="heading-table">
+            <img class="icon-heading-table" src="../images/mama/student.png" alt="graduation" />
+            <div class="title-heading-table">Students</div>
+          </div>
+          <div class="paragraph-table">Ultimate users are students, they are the ones who directly pay to use the service.</div>
+        </div>  
+        <div class="card">
+            <div class="heading-table">
+              <img class="icon-heading-table" src="../images/mama/briefcase.png" alt="briefcase" />
+              <div class="title-heading-table">Teachers</div>
+            </div>
+            <div class="paragraph-table">Teachers a partners with the center to find and teach students.</div>
+          </div>  
+          <div class="card">
+            <div class="heading-table">
+              <img class="icon-heading-table" src="../images/mama/monitor copy.png" alt="monitor" />
+              <div class="title-heading-table">Administrator</div>
+            </div>
+            <div class="paragraph-table">Administrator will manage all data information from students and teachers.</div>
+          </div>  
+    </div>
+</div>
+
+<!--UX Research-->
+<div class="fade-effect category">
+    <div class="title-detail">UX Research</div>
+    <div class="content">
+        For my research plan, I first defined my target audience, which consists of students enrolled at the center. Then, I proceeded to identify the difficulties students face during the learning process. I found that more than 60% of our students want to manage their study time, materials, and course content, 30% of students think it is okay but not a priority, and 10% of students are indifferent to this matter.
+    </div>
+    <div class="heading">Problem Finding & Solution</div>
+    <div class="card-grid-research">
+        <div class="card">
+          <div class="heading-table">
+            <img class="icon-heading-table" src="../images/mama/error.png" alt="problems" />
+            <div class="title-heading-table">Problems</div>
+          </div>
+          <div class="list-paragraph-infor">
+            <ul class="ul">
+                <li class="card-li">It is difficult for students to keep track of courses such as class time, class schedule, course duration, ...</li>
+                <li class="card-li">Students forget to come to class.</li>
+                <li class="card-li">Students can't manage the content they have learned, exercise files, learning materials.</li>
+                <li class="card-li">Requests to absence , change class schedules must contact the class manager themselves (it takes time, class managers may forget to process student requests).</li>
+                <li class="card-li">Students have no control over whether the lesson actually takes place.</li>
+            </ul>
+        </div>
+        </div>  
+        <div class="card">
+            <div class="heading-table">
+              <img class="icon-heading-table" src="../images/mama/puzzle.png" alt="solutions" />
+              <div class="title-heading-table">Solutions</div>
+            </div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="card-li">Display detailed course information including: Teacher's name, course duration, class schedule, study topic, content, exercise file, learning materials of each session when the teacher updates.</li>
+                    <li class="card-li">Notice to remind students before class on the app.</li>
+                    <li class="card-li">Submit an application for leave or reschedule directly on the application, the request will be notified via email or notified on the system for class administrator and notified via email or on the application for teachers.</li>
+                    <li class="card-li">Students have the right to confirm session directly on the application whether the lesson really took place or not.</li>
+                </ul>
+            </div>          
+          </div>   
+    </div>
+</div>
+
+<!--Interview Questions-->
+<div class="fade-effect category">
+    <div class="title-detail">Interview Questions</div>
+    <div class="content">
+        Our team held an interview with a user group of 4 to 6 people ranging in age from 12 to 35 years old.
+    </div>
+    <div class="heading">List of interview questions for Students</div>
+    <div class="list-paragraph">
+        <ul class="ul">
+            <li class="li">Have you ever had trouble managing your online learning path?</li>
+            <li class="li">Have you ever encountered problems with resources (such as books, documents, software, learning tools) during online learning?</li>
+            <li class="li">Do you find it difficult to use technology to manage your online learning path?</li>
+            <li class="li">Have you ever had trouble assessing your learning progress and determining what to learn next?</li>
+            <li class="li">Have you ever had problems with missing classes or changing your online class schedule?</li>
+            <li class="li">Do you feel that the information about the policy of reporting absence or changing the online class schedule is provided fully and clearly?</li>
+            <li class="li">Would you like to see an overview of your learning history, including total study hours, completed lessons, grades, and progress metrics?</li>
+            <li class="li">What information do you want to see when you log in to the route management application?</li>
+            <li class="li">Would you like to see an overview of your study history such as total hours of study, lessons completed, grades or progress metrics?</li>
+            <li class="li">Do you want to know the study time, learning method, learning content or the start and end time of the course on the learning route management application?</li>
+        </ul>
+    </div>
+    <div class="heading">List of interview questions for Stakeholders</div>
+    <div class="list-paragraph">
+        <ul class="ul">
+            <li class="li">Does letting students actively manage their learning path help them complete their work more efficiently?</li>
+            <li class="li">Difficulties encountered in the process of supporting student care?</li>
+            <li class="li">What features will support the student care process?</li>
+            <li class="li">Why did you choose these features and how will it help you?</li>
+        </ul>
+    </div>
+</div>
+
+<!--Survey Question and Statistisc Result-->
+<div class="fade-effect category">
+    <div class="title-detail">Survey Question and Statistisc Result</div>
+    <div class="content">
+        In this section, I surveyed over 100 students to get a better understanding of the user problem. Some survey questions and statistical results are given below.
+    </div>
+    <div class="heading">Survey on Students</div>
+    <div class="card-grid">
+        <div class="card">
+          <div class="heading-table">
+            <div class="title-heading-table">During your studies, how will you manage your study path?</div>     
+        </div>
+        <div class="chart">
+            <img class="chart-illustration" src="../images/mama/Chart/11.png" alt="chart"/>
+        </div>
+            <div class="row-table">
+                <div class="rectangle" style="background-color: #373aff;"></div>
+                <div class="paragraph-table-survey">Reminders from others (65%)</div>
+            </div><div class="row-table">
+                <div class="rectangle" style="background-color: #fa192e;"></div>
+                <div class="paragraph-table-survey">Management application (20%)</div>                  
+            </div>
+            <div class="row-table">
+                <div class="rectangle" style="background-color: #feb80b;"></div>
+                <div class="paragraph-table-survey">Sticky note (10%)</div>
+            </div>
+             <div class="row-table">
+                <div class="rectangle" style="background-color: #21b16c;"></div>
+                <div class="paragraph-table-survey">Use nothing (5%)</div>         
+            </div>
+        </div> 
+        <div class="card">
+            <div class="heading-table">
+              <div class="title-heading-table">What do you think about a study time management application ?</div>
+            </div>
+            <div class="chart">
+                <img class="chart-illustration" src="../images/mama/Chart/22.png" alt="chart"/>
+            </div>
+            <div class="row-table">
+                <div class="rectangle" style="background-color: #373aff;"></div>
+                <div class="paragraph-table-survey">It will support me a lot (58%)</div>
+            </div>
+             <div class="row-table">
+                <div class="rectangle" style="background-color: #fa192e;"></div>
+                <div class="paragraph-table-survey">I don't know, but I will try it (26%)</div>
+            </div>           
+             <div class="row-table">
+                <div class="rectangle" style="background-color: #feb80b;"></div>
+                <div class="paragraph-table-survey">I don’t use (16%)</div>
+            </div>
+          </div>  
+          <div class="card">
+            <div class="heading-table">
+              <div class="title-heading-table">Do you want to manage your entire learning schedule ?</div>
+            </div>
+            <div class="chart">
+                <img class="chart-illustration" src="../images/mama/Chart/33.png" alt="chart"/>
+            </div>
+            <div class="row-table">
+                <div class="rectangle" style="background-color: #373aff;"></div>
+                <div class="paragraph-table-survey">Yes(75%)</div>
+            </div>
+            <div class="row-table">
+                <div class="rectangle" style="background-color: #fa192e;"></div>
+                <div class="paragraph-table-survey">No(25%)</div>
+            </div>     
+          </div>  
+          <div class="card">
+            <div class="heading-table">
+              <div class="title-heading-table">Do you want the application to have any more features?</div>
+            </div>
+            <div class="chart">
+                <img class="chart-illustration" src="../images/mama/Chart/44.png" alt="chart"/>
+            </div>
+             <div class="row-table">
+                <div class="rectangle" style="background-color: #373aff;"></div>
+                <div class="paragraph-table-survey">Notice before class time (33%)</div>
+            </div>    <div class="row-table">
+                <div class="rectangle" style="background-color: #fa192e;"></div>
+                <div class="paragraph-table-survey">Looking for a new teacher (27%)</div>
+            </div>    <div class="row-table">
+                <div class="rectangle" style="background-color: #feb80b;"></div>
+                <div class="paragraph-table-survey">Review old post content (38%)</div>
+            </div>    <div class="row-table">
+                <div class="rectangle" style="background-color: #21b16c;"></div>
+                <div class="paragraph-table-survey">View past tests (12%)</div>
+            </div>   
+          </div>  
+        </div>
+</div>
+
+<!--User Personas-->
+<div class="fade-effect category">
+        <div class="title-detail">User Personas</div>
+        <div class="personas">
+            <div class ="intro">
+                 <img class="avatar" src="../images/mama/man-mama.png" alt="Avatar" >
+                <div class = "infor-personas">
+                    <div class="heading-infor">Minh Tri</div>
+                    <div class="information">
+                        <div class="row-left">
+                            <div class="title-infor">Age:</div>
+                            <div class="title-infor">Occupation:</div>
+                            <div class="title-infor">Location:</div>
+                            <div class="title-infor">Relationship:</div>
+                        </div>
+                        <div class="row-right">
+                            <div class="paragraph-infor">26 year old</div>
+                            <div class="paragraph-infor">Tour guide</div>
+                            <div class="paragraph-infor">Ha Noi</div>
+                            <dlv class="paragraph-infor">Single</dlv>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="content-personas">
+            <div class="about">
+                <div class="title-infor">About him </div>
+                <div class="paragraph-infor">He is currently working as a tour guide. His job requires frequent contact with people. His upcoming plan is to become a tour guide with foreign guests, this is also a new development in his career. So he needed to improve his foreign language skills, but he didn't have much time, so he chose to learn English online. </div>
+            </div>
+            <div class="hobbies">
+                <div class="title-infor">Hobbies</div>
+                <div class="paragraph-infor">Travel, take photos, meet and connect with people</div>
+            </div>
+            <div class="technology">
+                <div class="title-infor">Technology</div>
+                <div class="paragraph-infor">Smartphone (IOS), Laptop (MacOS).</div>
+            </div>
+            <div class="user-paint-point">
+                <div class="good">
+                    <div class="title-infor" style="color: #b7fe31;">Good</div>
+                        <ul class="no-indent-1">
+                            <li class="li-paragraph-infor">Want to check the duration of the course, remind the upcoming class directly on your phone.</li>
+                            <li class="li-paragraph-infor">Please absent easily and quickly, without notifying the class administrator.</li>
+                            <li class="li-paragraph-infor">Review the lesson content.</li>
+                        </ul>
+                </div>
+                <div class="frustration">
+                    <div class="title-infor" style="color: #fe3131;">Frustration</div>
+                        <ul class="no-indent-1">
+                            <li class="li-paragraph-infor">It's hard for him to want to check the course duration.</li>
+                            <li class="li-paragraph-infor">Unable to contact the class administrator to ask for please absent due to business.</li>
+                            <li class="li-paragraph-infor">Sometimes he forgets class time.</li>
+                        </ul>
+                </div>               
+            </div>      
+    </div>
+</div>
+</div>
+
+<!--Business value-->
+    <div class="fade-effect category" >
+        <div class="title-detail">Business value</div>
+        <div class="content">
+            The features of the application, in addition to supporting students, also bring value to businesses. </div>
+            <div class="card-grid">
+                <div class="card-business">
+                  <div class="heading-table">
+                    <div class="title-heading-table">Courses Management</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Who gets what benefit from this feature?</div>
+                    <div class="paragraph-table-business">Students manage course time.</div>
+                    <div class="paragraph-table-business">Save time for class administrator.</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Output:</div>
+                    <div class="paragraph-table-business">Reduce the 280 cases where students contacted the class administrator to ask about study hours, lesson content, and remaining class time.</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">Among every 100 classes, about 25.7% of students reach out to the administrator to inquire about the teacher or class-related matters.</div>
+                  </div>
+                    <div class="row-business">
+                    <div class="heading-table-business">Time/action:</div>
+                    <div class="paragraph-table-business">5 minutes / time.</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Total time</div>
+                    <div class="paragraph-table-business">20.4 hours/month.</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">Reduce 280 cases of contacting the class administrator to ask about the amount of study, lesson content, and remaining hours.</div>
+                    <div class="paragraph-table-business">6,4% reduction in working hours/month for class administrator.</div>
+                  </div>
+                </div>  
+
+                <div class="card-business">
+                  <div class="heading-table">
+                    <div class="title-heading-table">Absence</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Who gets what benefit from this feature?</div>
+                    <div class="paragraph-table-business">Students do not lose session, tuition fees.</div>
+                    <div class="paragraph-table-business">Teachers do not lose session, are not penalized.</div>
+                    <div class="paragraph-table-business">Save working time for class administrator.</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Output:</div>
+                    <div class="paragraph-table-business">Reduce 540 cases of reschedule in 1 month.</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">540 cases occur every 1 month.</div>
+                  </div>
+                    <div class="row-business">
+                    <div class="heading-table-business">Time/action:</div>
+                    <div class="paragraph-table-business">5 minutes / time.</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Total  time</div>
+                    <div class="paragraph-table-business">45 hour / month.</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">Reduce 540 absences by calling class administrators directly</div>
+                    <div class="paragraph-table-business">21.7% reduction in working hours/month for class administrator</div>
+                  </div>
+                </div> 
+
+                <div class="card-business">
+                  <div class="heading-table">
+                    <div class="title-heading-table"> Reschedule</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Who gets what benefit from this feature?</div>
+                    <div class="paragraph-table-business">Students: Flexible scheduling helps avoid missing classes when busy.</div>
+                    <div class="paragraph-table-business">Teachers: Easier to manage teaching time and reduce make-up sessions.</div>
+                    <div class="paragraph-table-business">Administrators: Fewer student inquiries about schedules, saving support time.</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Output:</div>
+                    <div class="paragraph-table-business">Reduce 350 cases of reschedule in 1 month.</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">350 cases occur every 1 month</div>
+                  </div>
+                    <div class="row-business">
+                    <div class="heading-table-business">Time/action:</div>
+                    <div class="paragraph-table-business">20 minutes / time</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Total time</div>
+                    <div class="paragraph-table-business">22.5 hour / month.</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">Reduce 350 cases of reschedule</div>
+                    <div class="paragraph-table-business">8% reduction in working hours/month for class administrator</div>
+                  </div>
+                </div> 
+
+                <div class="card-business">
+                  <div class="heading-table">
+                    <div class="title-heading-table">Confirm Session</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Who gets what benefit from this feature?</div>
+                    <div class="paragraph-table-business">Students can manage their sessions</div>
+                    <div class="paragraph-table-business">Save working time for class administrator</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Output:</div>
+                    <div class="paragraph-table-business">Reduce the 190 complaints from students who were absent but still had their class hours deducted due to teacher misconduct.</div>
+                  </div>
+                  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">190 cases occur every 1 month</div>
+                  </div>
+                    <div class="row-business">
+                    <div class="heading-table-business">Time/action:</div>
+                    <div class="paragraph-table-business">5 minutes / time</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Total time</div>
+                    <div class="paragraph-table-business">16.5 hours/month</div>
+                  </div>  <div class="row-business">
+                    <div class="heading-table-business">Actions/month:</div>
+                    <div class="paragraph-table-business">Reduce 10 cases</div>
+                    <div class="paragraph-table-business">6% reduction in working hours/month for class administrator</div>
+                  </div>
+                </div> 
+                </div>
+     </div>
+
+<!--Information Architecture-->
+<div class="fade-effect category">
+    <div class="title-detail">Information Architecture</div>
+    <img src="../images/mama/cms 1.png" alt="Information Architecture" class="ia-image">
+</div>
+
+<!--User Flow-->
+<div class="fade-effect category">
+    <div class="title-detail">User Flow</div>
+    <div class="content">
+        User flow reflects the user's process from launching the application to discovering all the functions in the application and performing some action on the application.
+    </div>
+        <img src="../images/mama/cms 2.png" alt="user flow" class="image">
+    </div>
+
+<!--Style Guide & Components-->
+<div class="fade-effect category">
+    <div class="title-detail">Style Guide & Components</div>
+    <div class="heading">Typography</div>
+    <div class="wrapper-typo">
+        <div class="title-typo">Montserrat</div>
+        <div class="title-2-typo">Category</div>
+        <div class="content-typo">Sans-serif</div>
+        <div class="title-2-typo">Infor</div>
+        <div class="content-typo">Montserrat is a typeface designed by Julieta Ulanovsky, inspired by old posters and signs from the Montserrat neighborhood in Buenos Aires. The project aims to preserve and revive the beauty of urban typography from the first half of the 20th century, which is gradually disappearing due to urban development.
+Released under the SIL Open Font License, Montserrat is free to use. In addition to the regular Montserrat family, there are two sister families: Alternates (featuring unique letterforms) and Subrayada (meaning “underlined” in Spanish, with integrated underline elements in the letters).
+In 2017, the font was redrawn by Jacques Le Bailly to improve its readability for longer texts. The team also expanded support for Cyrillic script, with contributions from several type experts.</div>
+        <div class="divider-typo"></div>
+        <div class="wrapper-col">
+        <div class="col-typo">
+            <div class="title-1-demo">Regular</div>
+            <div class="Aa-1">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-2-demo">Medium</div>
+            <div class="Aa-2">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-3-demo">SemiBold</div>
+            <div class="Aa-3">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-4-demo">Bold</div>
+            <div class="Aa-4">Aa</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="heading">Icongraphy</div>
+    <div class="grid-icon">
+        <div class="wrapper-icon">
+            <img src="../images/mama/Icon/add-circle.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/add.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/arrow-left.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/arrow-right-1.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/arrow-right.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/book-1.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/book.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/brifecase-tick.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/calendar-edit.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/calendar-remove.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/calendar-tick.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/calendar.png" alt="icon" class="icon-image">
+        </div>
+        <div class="wrapper-icon">
+            <img src="../images/mama/Icon/call-calling.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/call-help.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/call.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/category.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/chart.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/clock.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/close-circle.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/cup.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/danger.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/edit-2.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/eye-slash.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/eye.png" alt="icon" class="icon-image">
+        </div>
+        <div class="wrapper-icon">
+            <img src="../images/mama/Icon/filter-search.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/gift.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/history.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/info-circle.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/like-dislike.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/lock.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/login.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/medal-star.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/menu.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/message-question.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/message-text.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/minus-cirlce.png" alt="icon" class="icon-image">
+        </div>
+        <div class="wrapper-icon">
+            <img src="../images/mama/Icon/moon.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/notification.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/password-refresh.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/profile-2user.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/profile-add.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/profile.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/search-normal.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/star.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/sun.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/task-square.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/teacher.png" alt="icon" class="icon-image">
+            <img src="../images/mama/Icon/tick-circle.png" alt="icon" class="icon-image">
+        </div>
+    </div>
+
+    <div class="heading">Color Palette
+        <div class="content" style="margin-top: 1rem; color: #fff;">Primary colors</div>       
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #19DE5E;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Malachite Green</div>
+                    <div class="hex-color">#19DE5E</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #14B24C;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Pigment Green</div>
+                    <div class="hex-color">#14B24C</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #0F8A3A;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Forest Green</div>
+                    <div class="hex-color">#0F8A3A</div>
+                </div>   
+            </div>
+            
+        </div>
+        <div class="content" style="margin-top: 1rem; color: #fff;">Secondary colors</div>     
+        <div class="col-color">      
+            <div class="color">
+                <div class="rectangle-color" style="background-color: #61a35a;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Asparagus Green</div>
+                    <div class="hex-color">#61A35A</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #4B7E45;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Fern Green</div>
+                    <div class="hex-color">#4B7E45</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #345830;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Hunter Green</div>
+                    <div class="hex-color">#345830</div>
+                </div>   
+            </div>
+        </div>
+
+        <div class="content" style="margin-top: 1rem; color: #fff;">Tertiary color</div>   
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #3172D2;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Celtic Blue</div>
+                    <div class="hex-color">#3172D2</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #2559A7;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Sapphire Blue</div>
+                    <div class="hex-color">#2559A7</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #1B4079;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Yale Blue</div>
+                    <div class="hex-color">#1B4079</div>
+                </div>   
+            </div>
+        </div>
+
+        <div class="content" style="margin-top: 1rem; color: #fff;">Text color</div>   
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #141414; border: 1px solid #424040;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Night</div>
+                    <div class="hex-color">#141414</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #A5A6A4;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Silver</div>
+                    <div class="hex-color">#A5A6A4</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #72745B;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Raseda Green</div>
+                    <div class="hex-color">#72745B</div>
+                </div>   
+            </div>
+        </div>
+
+        <div class="content" style="margin-top: 1rem; color: #fff;">Custom color</div> 
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #FF4D4D;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Bittersweet Red</div>
+                    <div class="hex-color">#FF4D4D</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #FFC700;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Mikado Yellow</div>
+                    <div class="hex-color">#FFC6700</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #2CD997;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Emerald Green</div>
+                    <div class="hex-color">#2CD997 </div>
+                </div> 
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color:#F2742D;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Pumpkin Orange</div>
+                    <div class="hex-color">#F2742D</div>
+                </div> 
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #3883F4;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Azure Blue</div>
+                    <div class="hex-color">#3883F4</div>
+                </div> 
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #8247FF;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Veronica Violet</div>
+                    <div class="hex-color">#8247FF</div>
+                </div> 
+            </div>
+        </div>  
+    </div>
+
+    <div class="heading">Top Navigator  Bar</div>
+    <div class="col-bar">
+        <img src="../images/mama/Component/1.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/mama/Component/2.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/mama/Component/3.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/mama/Component/4.png" alt="bottom-bar" class="image-nav"> 
+    </div>
+
+    <div class="heading">Bottom Navigator Bar</div>
+    <div class="col-bar">
+        <img src="../images/mama/Component/00.png" alt="bottom-bar" class="image-nav">
+        <img src="../images/mama/Component/000.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/mama/Component/0000.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/mama/Component/00000.png" alt="bottom-bar" class="image-nav"> 
+    </div>
+
+    <div class="heading">Button</div>
+    <div class="col-bar">
+    <div class="button-primary" style="background-color: #fff; padding: 0.75rem; border-radius: 1rem;">
+         <div class="content" style="color: #303030; margin-bottom:0.5rem; font-weight: 700;">Primary</div>
+         <img src="../images/mama/Component/primary.png" alt="button" class="button">
+         <img src="../images/mama/Component/disable.png" alt="button" class="button">
+    </div>
+    <div class="button-primary" style="background-color: #fff; padding: 0.75rem; border-radius: 1rem;">
+         <div class="content" style="color: #303030; margin-bottom:0.5rem; font-weight: 700;">Secondary</div>
+         <img src="../images/mama/Component/secondary.png" alt="button" class="button">
+         <img src="../images/mama/Component/disable-1.png" alt="button" class="button">
+    </div>
+    </div>
+
+    <div class="heading">Text Field</div>
+    <div class="col-bar">
+        <div class="text-field" style="background-color: #fff; padding: 0.75rem; border-radius: 1rem;">
+            <div class="content" style="color: #303030; margin-bottom:0.5rem; font-weight: 700;">Default</div>
+            <img src="../images/mama/Component/Enable.png" alt="field" class="image-field">
+        </div>
+        <div class="text-field" style="background-color: #fff; padding: 0.75rem; border-radius: 1rem;">
+            <div class="content" style="color: #303030; margin-bottom:0.5rem; font-weight: 700;">Focused</div>
+            <img src="../images/mama/Component/Focused.png" alt="field" class="image-field">
+        </div>
+        <div class="text-field" style="background-color: #fff; padding: 0.75rem; border-radius: 1rem;">
+            <div class="content" style="color: #303030; margin-bottom:0.5rem; font-weight: 700;">Filled</div>
+            <img src="../images/mama/Component/Text fileds.png" alt="field" class="image-field">
+        </div>
+        <div class="text-field" style="background-color: #fff; padding: 0.75rem; border-radius: 1rem;">
+            <div class="content" style="color: #303030; margin-bottom:0.5rem; font-weight: 700;">Error</div>
+            <img src="../images/mama/Component/Error.png" alt="field" class="image-field">
+        </div>
+    </div>
+
+    <div class="heading">Card</div>
+    <img src="../images/mama/Component/card.png" alt="card" class="card-compt">
+
+    <div class="heading">Dialogs & Bottom Sheet</div>
+    <img src="../images/mama/Component/Dialogs.png" alt="Dialogs" class="image-nav">
+</div>
+
+<!--Wireframe-->
+<div class="fade-effect category">
+    <div class="title-detail">Wireframe</div>
+    <div class="content">
+        Here are some wireframe screens that we have shared.
+    </div>
+    <div class="grid-wireframe">
+        <img src="../images/mama/wireframe/Login.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/mama/wireframe/OTP.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Schedule.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Course.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Result.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Profile 2.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Absence list units.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Absence.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Add schedule.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Change schedule 1.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Change schedule.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Course detail unconfirm.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Course detail-1.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Course detail.png" alt="wireframe" class="flow-wireframe">       
+        <img src="../images/mama/wireframe/History.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Kết quả học tập chi tiết ( trẻ em ).png" alt="wireframe" class="flow-wireframe">   
+        <img src="../images/mama/wireframe/Session details đã đánh giá.png" alt="wireframe" class="flow-wireframe">
+        <img src="../images/mama/wireframe/Units detail.png" alt="wireframe" class="flow-wireframe">
+    </div>
+</div>
+
+<!--Visual Design-->
+<div class="fade-effect category">
+    <div class="title-detail">Visual Design</div>
+    <div class="content">
+        Here are some of the final design screens that we share
+    </div>
+    <div class="wrapper-content1">
+        <div class="wrapper-label">
+            <div class="heading">Sign In - Forgot Password</div>
+            <div class="content">
+                After downloading the application, students can log in using the email or phone number they used during registration. If they forget their password, they can click the "Forgot Password" link and enter their registered email or phone number to reset it.
+            </div>
+        </div>
+        <div class="grid-mockup">
+                <img src="../images/mama/ui/Splash screen.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Login 1.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Login 2.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/iphone14-1.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/iphone14.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Reset Password 3.png" alt="mockup" class="mockup-visual"> 
+         </div>
+         <div class="wrapper-label">
+            <div class="heading">Learning schedule - My Courses</div>
+            <div class="content">
+                After logging in, the main screen will display your weekly class schedule, making it easy to track and plan your participation. In the course section, you can conveniently manage all courses, including their status, duration, and each student's learning progress.
+            </div>
+        </div>
+        <div class="grid-mockup">
+                <img src="../images/mama/ui/Schedule (2).png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Course 1.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Course 2.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Course 3.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Course 4.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Course 4.2.png" alt="mockup" class="mockup-visual">
+         </div>
+         <div class="grid-mockup">
+                <img src="../images/mama/ui/Course 5.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Course 6.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Course 7.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Course 8.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Course 9.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Course 10.png" alt="mockup" class="mockup-visual">
+         </div>
+
+          <div class="wrapper-label">
+            <div class="heading">Find a Teacher</div>
+            <div class="content">
+                Students can search for teachers here. The platform displays teacher profiles of those currently teaching at the center, including their class schedules, ratings, and more. Students can also book trial lessons directly from this section.
+            </div>
+        </div>
+        <div class="grid-mockup">
+                <img src="../images/mama/ui/Search teachers.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Search teachers 2.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Availability.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Teacher Information.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Select a time.png" alt="mockup" class="mockup-visual">
+                <img src="../images/mama/ui/Modal.png" alt="mockup" class="mockup-visual">
+         </div>
+         
+         <div class="wrapper-label">
+            <div class="heading"></div>
+            <div class="content" style="font-weight:  600 !important; color: #FFF !important; margin-bottom: 8px !important;">
+                Leave of Absence
+            </div> 
+            <div class="content">
+                This feature allows students to notify both the center and their teacher in advance when they are unable to attend a class. Students can select the specific class, provide a reason, and submit their absence request directly through the app.
+        </div>
+        <div class="grid-mockup">
+                <img src="../images/mama/ui/Absence.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Absence-1.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Absence-2.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Absence-3.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Absence-4.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/mama/ui/Absence-5.png" alt="mockup" class="mockup-visual">                 
+         </div>
+         <div class="content" style="font-weight:  600 !important; color: #FFF !important; margin-bottom: 8px !important;">
+    </div>
+    </div>
+    </div>
+
+<div class="wrapper-label">
+        <div class="heading">Other Screens</div>
+        <div class="content">Here are some screens of the project</div>
+    <div class="grid-mockup">
+            <img src="../images/mama/Other_Screen/1.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/2.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/3.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/4.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/5.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/6.png" alt="mockup" class="mockup-visual"> 
+     </div>
+     <div class="grid-mockup">
+            <img src="../images/mama/Other_Screen/7.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/8.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/9.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/10.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/11.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/12.png" alt="mockup" class="mockup-visual"> 
+     </div>
+     <div class="grid-mockup">
+            <img src="../images/mama/Other_Screen/13.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/14.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/15.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/16.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/17.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/18.png" alt="mockup" class="mockup-visual"> 
+     </div>
+     <div class="grid-mockup">
+            <img src="../images/mama/Other_Screen/19.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/20.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/21.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/22.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/23.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/24.png" alt="mockup" class="mockup-visual"> 
+     </div>
+     <div class="grid-mockup">
+            <img src="../images/mama/Other_Screen/25.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/26.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/27.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/28.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/29.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/30.png" alt="mockup" class="mockup-visual"> 
+     </div>
+     <div class="grid-mockup">
+            <img src="../images/mama/Other_Screen/31.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/32.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/33.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/34.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/35.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/mama/Other_Screen/36.png" alt="mockup" class="mockup-visual"> 
+     </div>
+</div>
+</div>
+</div>
+</section>
+
+<!--Contact
+<section id="main-infor" class="wrapper-contact">
+    <div class="contact-me" id="contact">
+        <div class="title">
+            <h4 class="heading1">👋 Get in touch</h4>
+            <div class="grid-container-contact">
+                <div class="contact">
+                    <div class="my-gmail">
+                        <a href="mailto:khoapham214@gmail.com">
+                            <h1 class="heading2">khoapham214@gmail.com</h1>
+                        </a>
+                    </div>
+                    <div class="my-phone">
+                            <a href="skype:0764157008?call">
+                                <h1 class="heading2">076 415 7008</h1>
+                            </a>
+                        </h1>
+                    </div>      
+    </div>
+    <div class="divider"></div>
+    <div class="social-media">
+        <div class="facebook">
+                    <div class="social-media">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/khoa.pham.7906" class="social-link">
+                                <img src="../images/Social Media/facebook.png" alt="Facebook Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/khoa-pham-933732252/" class="social-link">
+                                <img src="../images/Social Media/linkedin.png" alt="LinkedIn Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="behance">
+                            <a href="https://www.behance.net/lawlaw3" class="social-link">
+                                <img src="../images/Social Media/behance.png" alt="Behance Logo" class="social">
+                            </a>
+                     </div>
+                     <div class="zalo">
+                            <a href="https://zalo.me/0764157008" class="social-link">
+                                <img src="../images/Social Media/Zalo.png" alt="Zalo Logo" class="social">
+                            </a>
+                        </div> 
+                    </div>             
+    </div>
+</section>
+-->
+
+  <div id="footer-container"></div>
+  <script src="../FOOTER/footer.js"></script>
+  <script src="mama-detail.js"></script>
+  <script src="../cursor.js"></script>
+</body>
+</html>
+
+
+
+

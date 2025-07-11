@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igo Travel Booking App</title>
+    <link rel="stylesheet" href="igo-detail.css"> <!-- Đường dẫn tới file CSS nếu cần -->
+    <link rel="stylesheet" href="../cursor.css">
+<body>
+    <!-- Gradient Circle -->
+    <div class="gradient-circle"></div>
+
+    <!-- Top Bar  -->
+    <section class="wrapper">
+        <div class="container">
+            <div class="menu-items">
+                <a href="javascript:history.back()" class="menu-item link">
+                    <span class="mask">
+                        <div class="link-container">
+                            <span class="link-title1 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                            <span class="link-title2 title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                        </div>
+                        <div class="link-container">
+                            <span class="link-title1 title">RETURN</span>
+                            <span class="link-title2 title">RETURN</span>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <a href="javascript:history.back()" class="fullscreen-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" id="Arrow-Left-Long--Streamline-Font-Awesome.svg" height="18" width="24"><desc>Arrow Left Long Streamline Icon: https://streamlinehq.com</desc><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0.275390625 6.837890625c-0.3662109375 0.3662109375 -0.3662109375 0.9609374999999999 0 1.3271484375l3.75 3.75c0.3662109375 0.3662109375 0.9609374999999999 0.3662109375 1.3271484375 0s0.3662109375 -0.9609374999999999 0 -1.3271484375L3.2021484375 8.4375l10.8603515625 0c0.5185546875 0 0.9375 -0.4189453125 0.9375 -0.9375s-0.4189453125 -0.9375 -0.9375 -0.9375l-10.8603515625 0 2.150390625 -2.150390625c0.3662109375 -0.3662109375 0.3662109375 -0.9609374999999999 0 -1.3271484375s-0.9609374999999999 -0.3662109375 -1.3271484375 0l-3.75 3.75z" fill="#ffffff" stroke-width="1"></path></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="home.js"></script>
+
+ <!--Banner-title-->
+    <section class="full-page-wrapper">
+        <div class="banner-title">
+            <div class="banner">
+                <img src="../images/banner/igo.png" alt="banner-top" class="banner-image">
+            </div>
+        </div>
+        <div class="project-title">
+            <h1 class="big-title blur-text" id="blurText" >IGO TRAVEL BOOKING APP</h1>
+        </div>
+        <div class ="role-wrapper">
+            <div class ="year">
+                <div class="tiltle">Year</div>
+                <div class="value">2023</div>
+            </div>
+            <div class ="role">
+                <div class="tiltle">Role</div>
+                <div class="value">UX/UI Designer</div>
+            </div>
+        </div>
+    </section>
+    
+<!--Content-->
+<section class="full-content-wrapper">
+    <!--Project Overview-->
+    <div class="fade-effect category">
+        <div class="title-detail">Project Overview</div>
+        <div class="content">
+            What is Igo Travel Booking App? This is an application that helps you book rooms for outings, whether at home or abroad. In addition, you can search for resort tours from casual to high-end. Finally, the community function of IGO allows you to share with people beautiful images of the places you have been to, thereby building a travel community and connecting people on the IGO app.
+        </div>
+    </div>
+     <!--Research Process-->
+     <div class="fade-effect category">
+        <div class="title-detail">Research Process</div>
+        <div class="content">
+            Before starting development processi conducted in depth research.
+            <div class="heading">What are the gathered statistics?</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">IGO users are in the age group of 20-35 This is the age group that has a job anda stable income willing to experience new things, connect with people. In addition, this is the age group that is develop their career, define themselves, get married and above all define the age of 30 from society and they are facing a lot of pressure from many sides.</li>
+                    <li class="li">Statistics from the Institute of Mental Health - Bach Mai Hospital show that in Vietnam, about 30% of the population suffers from mental disorders, of which the rate of depression accounts for 25%.Every year, the number of people working in treating depression in our country is worth from 36,000 to 40,000 people. and now at a rate the rate is being rejuvenated.</li>
+                    <li class="li">Therefore, the need to relieve pressure through trips is absolutely necessary.</li>
+                </ul>
+            </div>
+            <div class="heading">What is the user's goal?</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">Want to use time and budget effectively for trips from scheduling of planning to the end of the trip.</li>
+                </ul>
+            </div>
+            <div class="heading">What is the value provided to users?</div>
+            <div class="content">For user</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">There is a community with the same interest in travel. Have more knowledge, experiences in places on the world.</li>
+                    <li class="li">Maximum saving time for searching for places, planning for trips.</li>
+                    <li class="li">Create connections between peozple, save the memories for user.</li>
+                    <li class="li">Searching your place easily, pay easily when booking.</li>
+                </ul>
+            </div>
+            <div class="content">For IGO</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">The community explore feature allows users to share photos, helping more people know about IGO.</li>
+                    <li class="li">Business with more partners in tourist destinations such as restaurants, hotels, resorts in tourist destinations.</li>
+                    <li class="li">When there is an ideal numbers of user, business business can increase sales from advertising for place, show and festivals are about to take place throught IGO’s Travel blogs feature.</li>
+                </ul>
+            </div>
+            <div class="heading">What problems might arise when starting a trip?</div>
+            <div class="content">Based on the survey of Vietnamese travel experience behavior in 2018, it shows that a large numberof people prefer to travel independently (78%) and only (28%) choose to travel by tour</div>
+            <div class="content">To prepare for the trip, usually they have to make a plan or simply follow the inspiration, but often encounter problems such as:</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">It take too much time for find trip information.</li>
+                    <li class="li">They have difficulty determinin travel time and distance from point to point to arrange the schedule so that it is reasonable.</li>
+                    <li class="li">There is no place to connect travel enthusiasts with each other.</li>
+                </ul>
+            </div>
+            <div class="heading">What are the solutions to these issues?</div>
+            <div class="content">From the problems that users encounter and the application offers the following solution!</div>
+            <div class="list-paragraph">
+                <ul class="ul">
+                    <li class="li">To solve this problem, the IGO application has provided a solution for users with more detailed choices. Users only need to select a destination IGO will suggest to users hotels and tours in the destination selected by the user with full information (prices, schedules, services, ...).</li>
+                    <li class="li">Propose a suggested schedule based on the information, internets that users have provided, or based on the highlights of the same direction.</li>
+                    <li class="li">Besides booking and tours. IGO has built a travel community when users of the application, users can post moments, videos, photos to the IGO community.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Usability Study-->
+    <div class="fade-effect category" >
+        <div class="title-detail">Usability Study</div>
+        <div class="heading">Participant 1</div>
+        <table class="custom-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="heading-table">Task</div>
+                        <div class="paragraph-table">Write the task number and directions here.</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">Prompt 1: If I said "how do you log in to this app?</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table"">Click Path</div>
+                        <div class="paragraph-table">Open app &#8594; login with phone number  &#8594; Wait for OTP code &#8594; Enter OTP</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">Open app &#8594; login with phone number  &#8594; Wait for OTP code &#8594; Enter OTP</div>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Observations</div>
+                        <div class="paragraph-table">Note down behaviors,opinions, and attitudes along with any errors, issues, or areas of confusion.</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">Participants understand the problem.</li>
+                                <li class="li-table">Participants act quickly because simple and familiar.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Quotes</div>
+                        <div class="paragraph-table">Note any significant quotes (positive and negative).</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">I find the application login quite simple for me because I have been familiar with applications with this way of logging in quite a few times.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Task Completion Path</div>
+                        <div class="paragraph-table">Choose if the task was:</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">easy to complete</li>
+                                <li class="li-table">completed but with difficulty</li>
+                                <li class="li-table">not completed</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">1</div>
+                    </td>
+                </tr>               
+            </tbody>
+        </table>
+        <div class="heading">Participant 2</div>
+        <table class="custom-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="heading-table">Task</div>
+                        <div class="paragraph-table">Write the task number and directions here.</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">Prompt 2: Use the app and start booking hotels in your favorite destination.</div>
+                    </td>
+                </tr>
+                    <td>
+                        <div class="heading-table">Click Path</div>
+                        <div class="paragraph-table">Open app &#8594; login with phone number  &#8594; Wait for OTP code &#8594; Enter OTP</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">Open app &#8594; login with phone number  &#8594; Wait for OTP code &#8594; Enter OTP</div>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Observations</div>
+                        <div class="paragraph-table">Note down behaviors,opinions, and attitudes along with any errors, issues, or areas of confusion.</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">Participants understand the problem.</li>
+                                <li class="li-table">It was difficult for participants to find the right hotel because they suggested too many hotels.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Ouotes</div>
+                        <div class="paragraph-table">Note any significant quotes (positive and negative).</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">Finding it difficult to find the right hotel you want to go to (it takes 30s - 1min to search).</li>
+                                <li class="li-table">Slightly annoyed by this experience.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Task Completion Path</div>
+                        <div class="paragraph-table">Choose if the task was:</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">easy to complete</li>
+                                <li class="li-table">completed but with difficulty</li>
+                                <li class="li-table">not completed</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">1</div>
+                    </td>
+                </tr>               
+            </tbody>
+        </table>
+        <div class="heading">Participant 3</div>
+        <table class="custom-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="heading-table">Task</div>
+                        <div class="paragraph-table">Write the task number and directions here.</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">Prompt 3: Use the app and start booking hotels in your favorite destination</div>
+                    </td>
+                </tr>
+                    <td>
+                        <div class="heading-table"">Click Path</div>
+                        <div class="paragraph-table">Open app &#8594; login with phone number  &#8594; Wait for OTP code &#8594; Enter OTP</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">Search hotel &#8594; Search room type &#8594; See detail room &#8594; Booking</div>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Observations</div>
+                        <div class="paragraph-table">Note down behaviors,opinions, and attitudes along with any errors, issues, or areas of confusion.</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">Participants understand the problem.</li>
+                                <li class="li-table">Some hotels display details of room types and prices, so participants can easily choose and book.</li>
+                                <li class="li-table">Some hotels display quite sketchy when there is a lack of information for participants to choose from.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Ouotes</div>
+                        <div class="paragraph-table">Note any significant quotes (positive and negative).</div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">Finding it difficult to find the right hotel you want to go to (it takes 30s -1min to search).</li>
+                                <li class="li-table">Pleasure experience shows on participant's face when seeing full details from price to included services.</li>
+                                <li class="li-table">Booking made easy.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="heading-table">Task Completion Path</div>
+                        <div class="paragraph-table">Choose if the task was:</div>
+                        <div class="paragraph-table">
+                            <ul class="no-indent">
+                                <li class="li-table">easy to complete</li>
+                                <li class="li-table">completed but with difficulty</li>
+                                <li class="li-table">not completed</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="heading-fake">-</div>
+                        <div class="paragraph-table">2</div>
+                    </td>
+                </tr>               
+            </tbody>
+        </table>
+    </div>
+    <!--User Personas-->
+    <div class="fade-effect category">
+        <div class="title-detail">User Personas</div>
+        <div class="personas">
+            <div class ="intro">
+                 <img class="avatar" src="../images/igo/women.png" alt="Avatar" >
+                <div class = "infor-personas">
+                    <div class="heading-infor">Lucy Pham</div>
+                    <div class="information">
+                        <div class="row-left">
+                            <div class="title-infor">Age:</div>
+                            <div class="title-infor">Occupation:</div>
+                            <div class="title-infor">Location:</div>
+                            <div class="title-infor">Relationship:</div>
+                        </div>
+                        <div class="row-right">
+                            <div class="paragraph-infor">22 year old</div>
+                            <div class="paragraph-infor">Digital Marketing</div>
+                            <div class="paragraph-infor">Ho Chi Minh City</div>
+                            <dlv class="paragraph-infor">Single</dlv>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="content-personas">
+            <div class="about">
+                <div class="title-infor">About her </div>
+                <div class="paragraph-infor">Amanda is an international student in the US after graduating she returned to Vietnam to work. Her current job is Digital Marketing and she also works as a freelance content. </div>
+            </div>
+            <div class="hobbies">
+                <div class="title-infor">Hobbies</div>
+                <div class="paragraph-infor">Amanda's hobby is traveling in search of new things, she can travel 3-4 times a year, so she is very interested in having something to help her find a place to stay when traveling. easier.</div>
+            </div>
+            <div class="technology">
+                <div class="title-infor">Technology</div>
+                <div class="paragraph-infor">Smartphone (IOS), Laptop (MacOS).</div>
+            </div>
+            <div class="user-paint-point">
+                <div class="good">
+                    <div class="title-infor" style="color: #b7fe31;">Good</div>
+                        <ul class="no-indent-1"">
+                            <li class="li-paragraph-infor">She likes to travel alone without any tour because she wants to discover new things so she has used many hotel booking apps.</li>
+                            <li class="li-paragraph-infor">Amanda's hobby is taking pictures, check-in and experiencing comfortable luxury hotels.</li>
+                            <li class="li-paragraph-infor">Review the lesson She still goes on tours from time to time, but those are experiences she doesn't enjoy content.</li>
+                        </ul>
+                </div>
+                <div class="frustration">
+                    <div class="title-infor" style="color: #fe3131;">Frustration</div>
+                        <ul class="no-indent-1">
+                            <li class="li-paragraph-infor">The picture of the room does not match the reality.</li>
+                            <li class="li-paragraph-infor">Room update is slower than reality.</li>
+                            <li class="li-paragraph-infor">Can't cancel booking room.</li>
+                            <li class="li-paragraph-infor">I like to have breakfast inside the hotel, but on some apps it doesn't show if the hotel has breakfast or not.</li>
+                        </ul>
+                </div>               
+            </div>      
+    </div>
+    </div>
+    <div class="personas">
+        <div class ="intro">
+             <img class="avatar" src="../images/igo/Man.png" alt="Avatar" >
+            <div class = "infor-personas">
+                <div class="heading-infor">Sung Wang</div>
+                <div class="information">
+                    <div class="row-left">
+                        <div class="title-infor">Age:</div>
+                        <div class="title-infor">Occupation:</div>
+                        <div class="title-infor">Location:</div>
+                        <div class="title-infor">Relationship:</div>
+                    </div>
+                    <div class="row-right">
+                        <div class="paragraph-infor">35 year old</div>
+                        <div class="paragraph-infor">Marketing Manager</div>
+                        <div class="paragraph-infor">Ha Noi City</div>
+                        <dlv class="paragraph-infor">Married</dlv>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="content-personas">
+        <div class="about">
+            <div class="title-infor">About him </div>
+            <div class="paragraph-infor">Sung Wang is a marketing manager at a company in the city, the job is quite stressful, he has to manage thecompany's systems.</div>
+        </div>
+        <div class="hobbies">
+            <div class="title-infor">Hobbies</div>
+            <div class="paragraph-infor">He loves to travel with his family but he doesn't have much time. James uses hotel booking apps relatively often because he has to travel often for business.</div>
+        </div>
+        <div class="technology">
+            <div class="title-infor">Technology</div>
+            <div class="paragraph-infor">Smartphone (Android), Laptop (Window).</div>
+        </div>
+        <div class="user-paint-point">
+            <div class="good">
+                <div class="title-infor" style="color: #b7fe31;">Good</div>
+                    <ul class="no-indent-1"">
+                        <li class="li-paragraph-infor">Sung Wang uses the booking app relatively often because he travels a lot on bussiness.</li>
+                        <li class="li-paragraph-infor">I usually stay in 3 to 5 star hotels depending on the cost paid by the company.</li>
+                        <li class="li-paragraph-infor">After stressful or stressful working hours, James will go to the spa to relax to have the best spirit for work. Sometimes when on leave James will travel with his family through tours.</li>
+                        <li class="li-paragraph-infor">Sometimes when on leave James will travel with his family through tours.</li>
+                    </ul>
+            </div>
+            <div class="frustration">
+                <div class="title-infor" style="color: #fe3131;">Frustration</div>
+                    <ul class="no-indent-1">
+                        <li class="li-paragraph-infor">It is difficult to cancel a reservation when there is an unexpected schedule change.</li>
+                        <li class="li-paragraph-infor">Details of services in the hotel such as spa, sauna, breakfast,... are still not displayed when choosing a hotel.</li>
+                        <li class="li-paragraph-infor">I like to have breakfast inside the hotel, but on some apps it doesn't show if the hotel has breakfast or not.</li>
+                    </ul>
+            </div>               
+        </div>      
+</div>
+</div>
+</div>
+</div>
+<!--Information Architecture-->
+<div class="fade-effect category">
+    <div class="title-detail">Information Architecture</div>
+    <img src="../images/Igo/IA.png" alt="Information Architecture" class="ia-image">
+</div>
+
+<!--Empathy Mapping-->
+<div class="fade-effect category">
+    <div class="title-detail">Empathy Mapping</div>
+    <div class="card-empathy">
+        <div class="wrapper-content-empathy">
+            <div class="good">
+                <div class="title-infor">See & Hear</div>
+                    <ul class="no-indent-1"">
+                        <li class="li-paragraph-infor">See reviews on youtube, blog</li>
+                        <li class="li-paragraph-infor">Listen to information through friends and relatives</li>
+                        <li class="li-paragraph-infor">Searching on website,app booking</li>
+                        <li class="li-paragraph-infor">Ask for advice before the trip</li>
+                    </ul>
+            </div> 
+        </div>
+    </div>
+    <div class="card-empathy">
+        <div class="wrapper-content-empathy">
+            <div class="good">
+                <div class="title-infor">Think</div>
+                    <ul class="no-indent-1"">
+                        <li class="li-paragraph-infor">Thinking about choosing a destination</li>
+                        <li class="li-paragraph-infor">Searching for a good place to stay</li>
+                        <li class="li-paragraph-infor">Think about the cost</li>
+                    </ul>
+            </div> 
+        </div>
+    </div>
+    <div class="card-empathy">
+        <div class="wrapper-content-empathy">
+            <div class="good">
+                <div class="title-infor">Say & Does</div>
+                    <ul class="no-indent-1"">
+                        <li class="li-paragraph-infor">Prepare the necessary items before the trip</li>
+                        <li class="li-paragraph-infor">Share trip information with family or friends</li>
+                        <li class="li-paragraph-infor">Contact and book destination</li>
+                        <li class="li-paragraph-infor">Searching information about where to go</li>
+                    </ul>
+            </div> 
+        </div>
+    </div>
+    <div class="card-empathy">
+        <div class="wrapper-content-empathy">
+            <div class="good">
+                <div class="title-infor">Pain</div>
+                    <ul class="no-indent-1"">
+                        <li class="li-paragraph-infor">No good preparation before the trip</li>
+                        <li class="li-paragraph-infor">Bad trip experience</li>
+                        <li class="li-paragraph-infor">Unable to properly go to pre-planned attractions</li>
+                        <li class="li-paragraph-infor">Choosing an overpriced travel agent</li>
+                    </ul>
+            </div> 
+        </div>
+    </div>
+    <div class="card-empathy">
+        <div class="wrapper-content-empathy">
+            <div class="good">
+                <div class="title-infor">Gain</div>
+                    <ul class="no-indent-1"">
+                        <li class="li-paragraph-infor">More new experience</li>
+                        <li class="li-paragraph-infor">Can connect with more people</li>
+                        <li class="li-paragraph-infor">Can more insights about visited destinations</li>
+                        <li class="li-paragraph-infor">Save beautiful memories and pictures</li>
+                    </ul>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!--User Flow-->
+<div class="fade-effect category">
+    <div class="title-detail">User Flow</div>
+    <div class="content">
+        User flow reflects the user's process from launching the application to discovering all the functions in the application and performing some action on the application.
+    </div>
+        <img src="../images/Igo/User Flow.png" alt="Information Architecture" class="image">
+    </div>
+
+<!--User Journey Map-->
+<div class="fade-effect category">
+    <div class="title-detail">User Journey Map</div>
+    <img src="../images/Igo/UJM.png" alt="Information Architecture" class="image">
+</div>
+
+<!--Style Guide & Components-->
+<div class="fade-effect category">
+    <div class="title-detail">Style Guide & Components</div>
+    <div class="heading">Typography</div>
+    <div class="wrapper-typo">
+        <div class="title-typo">SF Pro Rounded</div>
+        <div class="title-2-typo">Category</div>
+        <div class="content-typo">Sans-serif</div>
+        <div class="title-2-typo">Infor</div>
+        <div class="content-typo">SF Pro Rounded is a modern, friendly typeface developed by Apple Inc. It belongs to the SF Pro family and is primarily designed for readability and versatility across Apple's ecosystem. The font’s rounded terminals soften its appearance, making it more approachable and suitable for a variety of digital and print applications. It supports a wide range of weights and languages, ensuring excellent usability in both headlines and body text.</div>
+        <div class="divider-typo"></div>
+        <div class="wrapper-col">
+        <div class="col-typo">
+            <div class="title-1-demo">Regular</div>
+            <div class="Aa-1">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-2-demo">Medium</div>
+            <div class="Aa-2">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-3-demo">SemiBold</div>
+            <div class="Aa-3">Aa</div>
+        </div>
+        <div class="col-typo">
+            <div class="title-4-demo">Bold</div>
+            <div class="Aa-4">Aa</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="heading">Icongraphy</div>
+    <div class="grid-icon">
+        <div class="wrapper-icon">
+            <img src="../images/Igo/vuesax/linear/airplane-square.png" alt="airplane" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/buildings.png" alt="building" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/call-calling.png" alt="calling" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/frame.png" alt="person" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/heart.png" alt="heart" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/link-circle.png" alt="link circle" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/lock.png"alt="lock" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/login.png" alt="login" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/message-text.png" alt="message" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/search-normal.png" alt="search" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/send-2.png" alt="send" class="icon-image">
+            <img src="../images/Igo/vuesax/linear/sms.png" alt="sms" class="icon-image">
+        </div>
+        <div class="wrapper-icon">
+            <img src="../images/Igo/vuesax/bold/airplane-square.png" alt="airplane" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/buildings.png" alt="building" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/call-calling.png" alt="calling" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/frame.png" alt="person" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/heart.png" alt="heart" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/link-circle.png" alt="link circle" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/lock.png"alt="lock" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/login.png" alt="login" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/message-text.png" alt="message" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/search-normal.png" alt="search" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/send-2.png" alt="send" class="icon-image">
+            <img src="../images/Igo/vuesax/bold/sms.png" alt="sms" class="icon-image">
+        </div>
+    </div>
+    <div class="heading">Color Palette
+        <div class="content" style="margin-top: 1rem; color: #fff;">Primary colors</div>       
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #2190FF;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Dodger Blue</div>
+                    <div class="hex-color">#2190FF</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #2CC0FF;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Deep Sky Blue</div>
+                    <div class="hex-color">#2CC0FF</div>
+                </div>   
+            </div>
+        </div>
+        <div class="content" style="margin-top: 1rem; color: #fff;">Secondary colors</div>     
+        <div class="col-color">      
+            <div class="color">
+                <div class="rectangle-color" style="background-color: #001B36; border: 1px solid #33383f;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Oxford Blue</div>
+                    <div class="hex-color">#001B36</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #E3EBF3;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Berkeley Blue</div>
+                    <div class="hex-color">#E3EBF3</div>
+                </div>   
+            </div>
+        </div>
+        <div class="content" style="margin-top: 1rem; color: #fff;">Tertiary color</div>   
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #d7e4f2;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Alice Blue</div>
+                    <div class="hex-color">#D7E4F2</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #d4dce2;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Platinum</div>
+                    <div class="hex-color">#D4DCE2</div>
+                </div>   
+            </div>
+        </div>
+        <div class="content" style="margin-top: 1rem; color: #fff;">Custom color</div> 
+        <div class="col-color">      
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #FF0D0D;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Red</div>
+                    <div class="hex-color">#FF0D0D</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #FFC700;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Mikado Yellow</div>
+                    <div class="hex-color">#FFC6700</div>
+                </div>   
+            </div>
+            <div class="color">
+                <div class ="rectangle-color" style="background-color: #09CE0F
+                ;"></div>
+                <div class="name-color">
+                    <div class="heading-name">Lime Green</div>
+                    <div class="hex-color">#09CE0F </div>
+                </div> 
+            </div>
+        </div>  
+    </div>
+
+    <div class="heading">Bottom Navigation Bar</div>
+    <div class="col-bar">
+        <img src="../images/Igo/Bottom bar/Component 71.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/Igo/Bottom bar/Component 72.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/Igo/Bottom bar/Component 73.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/Igo/Bottom bar/Component 74.png" alt="bottom-bar" class="image-nav"> 
+        <img src="../images/Igo/Bottom bar/Component 75.png" alt="bottom-bar" class="image-nav"> 
+    </div>
+</div>
+
+<!--Wireframe-->
+<div class="fade-effect category">
+    <div class="title-detail">Wireframe</div>
+    <div class="content">
+        Here are some wireframe screens that we have shared.
+    </div>
+    <div class="grid-wireframe">
+        <img src="../images/Igo/wireframe/Login.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Regsiter.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Verification Email.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Forget pass.png" alt="wireframe" class="fect flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Home.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Detail hotel.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Room hotel.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Blog review.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/News.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Information Contact.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Comfirm.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Payment.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/Igo.png" alt="wireframe" class="flow-wireframe"> 
+        <img src="../images/Igo/wireframe/News Blog.png" alt="wireframe" class="flow-wireframe"> 
+    </div>
+
+</div>
+
+<!--Visual Design-->
+<div class="fade-effect category">
+    <div class="title-detail">Visual Design</div>
+    <div class="content">
+        Here are some of the final design screens that we share
+    </div>
+    <div class="wrapper-content1">
+        <div class="wrapper-label">
+            <div class="heading">Sign in / Sign up</div>
+            <div class="content">
+                Users can register an account by email or phone number. If you register with your phone number, you will be given an OTP to confirm your account.
+            </div>
+        </div>
+        <div class="grid-mockup">
+                <img src="../images/Igo/ui/1.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/Igo/ui/2.png" alt="wireframe" class="mockup-visual"> 
+                <img src="../images/Igo/ui/3.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/Igo/ui/4.png" alt="wireframe" class="mockup-visual">    
+                <img src="../images/Igo/ui/5.png" alt="wireframe" class="mockup-visual">    
+         </div>
+         <div class="wrapper-label">
+            <div class="heading">Homepage</div>
+            <div class="content">
+                The homepage of the IGO application helps users to search for destinations, hotels, and tours. In addition, the application cooperates with hotels and tour agents to suggest hot travel deals to customers to help hotels and travel agents have more customers.
+            </div>
+        </div>
+        <div class="grid-mockup">
+                <img src="../images/Igo/ui/6.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/Igo/ui/7.png" alt="wireframe" class="mockup-visual"> 
+                <img src="../images/Igo/ui/8.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/Igo/ui/9.png" alt="wireframe" class="mockup-visual">    
+                <img src="../images/Igo/ui/10.png" alt="wireframe" class="mockup-visual">    
+         </div>
+         <div class="wrapper-label">
+            <div class="heading">Favorite - My booking</div>
+            <div class="content" style="font-weight:  600 !important; color: #FFF !important; margin-bottom: 8px !important;">
+                Save favorite places
+            </div> 
+            <div class="content">
+                The feature of storing the hotels, tours, and blogs that users love so that they can experience it later without losing time to search again.
+        </div>
+        <div class="grid-mockup">
+                <img src="../images/Igo/ui/6.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/Igo/ui/7.png" alt="wireframe" class="mockup-visual"> 
+                <img src="../images/Igo/ui/8.png" alt="mockup" class="mockup-visual"> 
+                <img src="../images/Igo/ui/9.png" alt="wireframe" class="mockup-visual">    
+                <img src="../images/Igo/ui/10.png" alt="wireframe" class="mockup-visual">    
+         </div>
+         <div class="content" style="font-weight:  600 !important; color: #FFF !important; margin-bottom: 8px !important;">
+            Save booked tourist attractions
+        </div> 
+        <div class="content">
+            The tourist attractions the user has booked will be stored for users to review, in addition the application also suggests similar places for users to experience more.
+    </div>
+    <div class="grid-mockup">
+            <img src="../images/Igo/ui/12.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/Igo/ui/19.png" alt="wireframe" class="mockup-visual"> 
+            <img src="../images/Igo/ui/14.png" alt="wireframe" class="mockup-visual">   
+            <img src="../images/Igo/ui/11.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/Igo/ui/13.png" alt="wireframe" class="mockup-visual">        
+     </div>
+    </div>
+
+    <div class="wrapper-label">
+        <div class="heading">Profile - Payment</div>
+        <div class="content">
+            The user's display information, including editable personal details and stored images posted to IGO Explore, is shown here, along with the booking confirmation and payment method selection interface.
+            </div>
+    <div class="grid-mockup">
+            <img src="../images/Igo/ui/20.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/Igo/ui/24.png" alt="wireframe" class="mockup-visual">    
+            <img src="../images/Igo/ui/21.png" alt="wireframe" class="mockup-visual"> 
+            <img src="../images/Igo/ui/22.png" alt="mockup" class="mockup-visual"> 
+            <img src="../images/Igo/ui/23.png" alt="wireframe" class="mockup-visual">    
+     </div>
+</div>
+</div>
+</section>
+
+<!--Contact
+<section id="main-infor" class="wrapper-contact">
+    <div class="contact-me" id="contact">
+        <div class="title">
+            <h4 class="heading1">👋 Get in touch</h4>
+            <div class="grid-container-contact">
+                <div class="contact">
+                    <div class="my-gmail">
+                        <a href="mailto:khoapham214@gmail.com">
+                            <h1 class="heading2">khoapham214@gmail.com</h1>
+                        </a>
+                    </div>
+                    <div class="my-phone">
+                            <a href="skype:0764157008?call">
+                                <h1 class="heading2">076 415 7008</h1>
+                            </a>
+                        </h1>
+                    </div>      
+    </div>
+    <div class="divider"></div>
+    <div class="social-media">
+        <div class="facebook">
+                    <div class="social-media">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/khoa.pham.7906" class="social-link">
+                                <img src="../images/Social Media/facebook.png" alt="Facebook Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/khoa-pham-933732252/" class="social-link">
+                                <img src="../images/Social Media/linkedin.png" alt="LinkedIn Logo" class="social">
+                            </a>
+                        </div>
+                        <div class="behance">
+                            <a href="https://www.behance.net/lawlaw3" class="social-link">
+                                <img src="../images/Social Media/behance.png" alt="Behance Logo" class="social">
+                            </a>
+                     </div>
+                     <div class="zalo">
+                            <a href="https://zalo.me/0764157008" class="social-link">
+                                <img src="../images/Social Media/Zalo.png" alt="Zalo Logo" class="social">
+                            </a>
+                        </div> 
+                    </div>             
+    </div>
+</section>
+  </div>
+-->
+  <div id="footer-container"></div>
+  <script src="../FOOTER/footer.js"></script>
+  <script src="igo-detail.js"></script>
+  <script src="../cursor.js"></script>
+</body>
+</html>
+
+
+
+
