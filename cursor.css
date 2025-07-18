@@ -14,8 +14,8 @@
 .cursor-f {
   width: 32px;
   height: 32px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
   border: 1.5px solid #c9fa49;
   position: fixed; /* Đổi từ absolute sang fixed */
   transform: translate(-50%, -50%);
