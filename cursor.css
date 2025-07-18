@@ -2,7 +2,7 @@
 .cursor {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 100%;
   background: #c9fa49;
   position: fixed; /* Đổi từ absolute sang fixed để giữ đúng vị trí */
   transform: translate(-50%, -50%);
