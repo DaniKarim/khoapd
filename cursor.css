@@ -1,0 +1,53 @@
+/* Custom Cursor Style */
+.cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c9fa49;
+  position: fixed; /* Đổi từ absolute sang fixed để giữ đúng vị trí */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out, background 0.2s ease-out;
+}
+
+.cursor-f {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  border: 1.5px solid #c9fa49;
+  position: fixed; /* Đổi từ absolute sang fixed */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  opacity: 0.5;
+  backdrop-filter: blur(200px); /* hiệu ứng blur */
+  -webkit-backdrop-filter: blur(200px); /* cho Safari */
+  filter: drop-shadow(0 0 8px rgba(201, 250, 73, 0.4)); /* Glow blur */
+}
+
+
+.cursor-click {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  background: #c8fa4995;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9997;
+  animation: clickAnim 0.4s ease-out forwards;
+}
+
+@keyframes clickAnim {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}

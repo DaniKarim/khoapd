@@ -363,24 +363,11 @@ body {
     height: 1.5em;
     color:#b7fe31;
   }
-
-  .blur-text.in-view {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
-
-    .big-title{
-    font-size:2.8rem;
-    font-weight: 700;
-    height: 1.5em;
-    color:#b7fe31;
-  }
   .blur-text {
     opacity: 0;
     filter: blur(10px);
     transform: translateY(50px);
-    transition: opacity 0.8s ease-out, filter 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 0.5s ease-out, filter 0.5s ease-out, transform 0.5s ease-out;
   }
   
   .blur-text.in-view {
@@ -444,6 +431,21 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+.fade-effect.category {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, filter 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-effect.category.in-view {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+
 
 /*Research Process*/
 .title-detail{
@@ -1468,6 +1470,8 @@ a {
     margin-bottom: 7.5rem;
   }
 
+
+
   .banner-image{
     height: 280px;
     width: auto;
@@ -1497,6 +1501,7 @@ a {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
 
  /*Content*/
  .category{

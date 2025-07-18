@@ -50,3 +50,17 @@ interactiveElements.forEach((element) => {
         cursorF.classList.remove('hover-effect-f');
     });
 });
+
+//click
+
+  document.addEventListener("click", function (e) {
+    const ripple = document.createElement("div");
+    ripple.classList.add("cursor-click");
+    ripple.style.left = e.clientX + "px";
+    ripple.style.top = e.clientY + "px";
+    document.body.appendChild(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 400);
+  });

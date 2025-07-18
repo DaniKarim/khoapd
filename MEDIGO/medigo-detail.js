@@ -175,7 +175,24 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(target);
 });
 
+//Transition 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const targets = document.querySelectorAll(".fade-effect.category");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  targets.forEach(target => {
+    observer.observe(target);
+  });
+});
 
 
   
